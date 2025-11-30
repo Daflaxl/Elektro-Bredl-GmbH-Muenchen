@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Facebook, Instagram } from 'lucide-react';
 
 const Footer = () => {
@@ -65,7 +66,7 @@ const Footer = () => {
         <div className="border-t border-white/10 pt-8 text-center text-gray-500 text-xs">
           <p>&copy; {new Date().getFullYear()} Elektro Bredl GmbH. Alle Rechte vorbehalten.</p>
           <div className="mt-2 space-x-4">
-            <a href="#" className="hover:text-gray-300">Impressum</a>
+            <Link to="/impressum" className="hover:text-gray-300">Impressum</Link>
             <a href="#" className="hover:text-gray-300">Datenschutz</a>
           </div>
         </div>
