@@ -26,7 +26,17 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-bold text-gray-900">Anschrift</p>
-                    <p className="text-gray-600">Elektro Bredl GmbH<br />Schopenhauerstr. 94<br />80809 München</p>
+                    <p className="text-gray-600">
+                      Elektro Bredl GmbH<br />
+                      <a 
+                        href="https://www.google.de/maps/place/Schopenhauerstra%C3%9Fe+94,+80809+M%C3%BCnchen/@48.1794244,11.5613247,1531m/data=!3m2!1e3!4b1!4m6!3m5!1s0x479e742a7433f0e5:0x3505dff16dd59105!8m2!3d48.1794245!4d11.5661956!16s%2Fg%2F11b8vd_mnn?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-accent transition-colors"
+                      >
+                        Schopenhauerstr. 94<br />80809 München
+                      </a>
+                    </p>
                   </div>
                 </div>
 

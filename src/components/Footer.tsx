@@ -49,7 +49,14 @@ const Footer = () => {
             <ul className="space-y-3 text-gray-300 text-sm">
               <li className="flex items-start">
                 <MapPin size={16} className="mr-2 mt-1 flex-shrink-0" />
-                <span>Schopenhauerstr. 94<br/>80809 München</span>
+                <a 
+                  href="https://www.google.de/maps/place/Schopenhauerstra%C3%9Fe+94,+80809+M%C3%BCnchen/@48.1794244,11.5613247,1531m/data=!3m2!1e3!4b1!4m6!3m5!1s0x479e742a7433f0e5:0x3505dff16dd59105!8m2!3d48.1794245!4d11.5661956!16s%2Fg%2F11b8vd_mnn?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  Schopenhauerstr. 94<br/>80809 München
+                </a>
               </li>
               <li className="flex items-center">
                 <Phone size={16} className="mr-2 flex-shrink-0" />
