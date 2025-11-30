@@ -8,6 +8,7 @@ interface FormData {
   email: string;
   phone: string;
   area: string;
+  message: string;
 }
 
 const OfferForm = () => {
@@ -19,7 +20,8 @@ const OfferForm = () => {
     address: '',
     email: '',
     phone: '',
-    area: ''
+    area: '',
+    message: ''
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -69,7 +71,8 @@ const OfferForm = () => {
           address: '',
           email: '',
           phone: '',
-          area: ''
+          area: '',
+          message: ''
         });
       } else {
         // Fehler von Web3Forms
@@ -192,6 +195,20 @@ const OfferForm = () => {
             onChange={handleInputChange}
             className="w-full px-4 py-2 border border-gray-300 rounded-sm focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition-all"
             placeholder="z.B. 120"
+          />
+        </div>
+
+        {/* Nachricht/Projektbeschreibung */}
+        <div>
+          <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Nachricht / Projektbeschreibung</label>
+          <textarea
+            id="message"
+            name="message"
+            rows={4}
+            value={formData.message}
+            onChange={handleInputChange}
+            className="w-full px-4 py-2 border border-gray-300 rounded-sm focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition-all resize-vertical"
+            placeholder="Beschreiben Sie Ihr Projekt oder stellen Sie Fragen..."
           />
         </div>
 
