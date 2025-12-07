@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ShieldCheck, Ruler, Users, ArrowRight, Home, Zap, PenTool, Shield, CheckCircle2, Clock, Award } from 'lucide-react';
+import { ShieldCheck, Ruler, Users, ArrowRight, Home, Zap, PenTool, Shield, CheckCircle2, Clock, MapPin, Award } from 'lucide-react';
 import OfferForm from '../components/OfferForm';
 
 const OnePage = () => {
